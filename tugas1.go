@@ -21,21 +21,21 @@ var persons []Person = []Person{
 		Nama:   "Zidane",
 		Alamat: "Jalan Soekarno Hatta",
 		Pekerjaan: "programmer",
-		Alasan: "karena saya suka ngoding",
+		Alasan: "karena saya ingin memperdalam ilmu tentang bahasa golang",
 	},
 	{
 		Id:     2,
 		Nama:   "Ali",
 		Alamat: "Jalan Bunga Coklat",
-		Pekerjaan: "koki",
-		Alasan: "Karena saya suka masak",
+		Pekerjaan: "programmer",
+		Alasan: "Karena saya ingin mempelajari bahasa baru",
 	},
 	{
 		Id:     3,
 		Nama:   "Basalamah",
 		Alamat: "Jalan Raya Sulfat",
-		Pekerjaan: "insinyur",
-		Alasan: "Karena saya suka merancang dan membangun suatu bangunan",
+		Pekerjaan: "programmer",
+		Alasan: "Karena saya suka ngoding dan suka mengeksplore seputar ngoding",
 	},
 }
 
@@ -56,6 +56,6 @@ func FindBiodata(personName string) (Person, error) {
 			return value, nil
 		}
 	}
-	
+
 	return Person{}, errors.New("Biodata not found")
 }
